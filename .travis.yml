@@ -6,7 +6,8 @@ install:
   - pip install coveralls
 
 # command to run tests
-script: make
+script:
+  - coverage run -m unittest
 
 after_success:
   - coveralls
